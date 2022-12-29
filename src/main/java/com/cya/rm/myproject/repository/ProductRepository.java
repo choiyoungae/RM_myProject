@@ -12,14 +12,19 @@ public interface ProductRepository {
 
 	@Select("""
 			<script>
-				SELECT * FROM product
+				SELECT P.id, P.`name`, P.price,
+				SUBSTR(P.regDate,1,10) AS regDate,
+				C.companyName AS companyName
+				FROM product AS P
+				LEFT JOIN company AS C
+				ON P.companyId = C.id;
 			</script>
 			""")
 	List<Product> getForPrintProducts();
 
 	@Select("""
 			<script>
-				SELECT COUNT(*) FROM product
+				SELECT COUNT(*) FROM product;
 			</script>
 			""")
 	int getProductsCount();

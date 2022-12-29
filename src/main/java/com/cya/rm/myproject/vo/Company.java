@@ -7,10 +7,9 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Product {
+public class Company {
 	private int id;
-	private String name;
-	private int price;
-	private String regDate;
 	private String companyName;
+	private String CEOname;
+	private String contactNum;
 }
