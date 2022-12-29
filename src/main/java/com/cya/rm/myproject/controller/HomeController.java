@@ -7,19 +7,26 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.cya.rm.myproject.service.HomeService;
+import com.cya.rm.myproject.service.ProductService;
 import com.cya.rm.myproject.vo.Product;
+import com.cya.rm.myproject.vo.ResultData;
 
 @Controller
 public class HomeController {
 	
 	@Autowired
-	HomeService homeService;
+	ProductService productService;
 	
-	@RequestMapping("/")
+	@RequestMapping("/product")
 	@ResponseBody
-	public List<Product> showMain() {
-		return homeService.getProducts();
+	public <DT> ResultData<DT> showMain() {
+		
+		int productCount = productService.getProductsCount();
+
+		List<Product> product = productService.getProducts();
+		ResultData<DT> rd = ResultData.from(productCount,product);
+		
+		return rd;
 	}
 
 }

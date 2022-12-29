@@ -17,4 +17,11 @@ public interface ProductRepository {
 			""")
 	List<Product> getForPrintProducts();
 
+	@Select("""
+			<script>
+				SELECT COUNT(*) FROM product
+			</script>
+			""")
+	int getProductsCount();
+
 }

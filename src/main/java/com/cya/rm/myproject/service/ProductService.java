@@ -9,12 +9,16 @@ import com.cya.rm.myproject.repository.ProductRepository;
 import com.cya.rm.myproject.vo.Product;
 
 @Service
-public class HomeService {
+public class ProductService {
 	
 	@Autowired
 	ProductRepository productRepository;
 
 	public List<Product> getProducts() {
 		return productRepository.getForPrintProducts();
+	}
+
+	public int getProductsCount() {
+		return productRepository.getProductsCount();
 	}
 }
