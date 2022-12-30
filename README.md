@@ -26,5 +26,6 @@
 'http://localhost:8080/purchaseInfo'를 입력하면 상품정보 데이터를 조회할 수 있다.<br/>
 ![image](https://user-images.githubusercontent.com/109134495/210076712-0a00f500-1e65-4b6e-9524-c56159887947.png)
 
-
+## Docker Hub에 Push한 링크
+https://hub.docker.com/r/choiyoungae/rm_youngae_project
 
