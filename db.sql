@@ -9,7 +9,7 @@ CREATE TABLE company(
     companyName CHAR(20) NOT NULL,
     CEOname CHAR(20) NOT NULL,
     contactNum CHAR(20) NOT NULL
-)
+);
 
 # 상품정보 테이블 생성(상품명, 금액, 등록일자, 등록업체명)
 CREATE TABLE product(
@@ -19,14 +19,14 @@ CREATE TABLE product(
     regDate DATETIME NOT NULL,
     companyId INT(10) UNSIGNED NOT NULL,
     FOREIGN KEY (companyId) REFERENCES company (id) ON DELETE CASCADE
-)
+);
 
 # 구매자 테이블 생성(이름, 연락처)
 CREATE TABLE customer(
     id INT(10) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
     `name` CHAR(20) NOT NULL,
     phoneNum CHAR(20) NOT NULL
-)
+);
 
 # 구매정보 테이블 생성(상품정보, 구매자, 금액, 구매일자, 구매번호)
 CREATE TABLE purchaseInfo(
@@ -37,7 +37,7 @@ CREATE TABLE purchaseInfo(
     productCount INT(10) NOT NULL,
     FOREIGN KEY (productId) REFERENCES product (id),
     FOREIGN KEY (customerId) REFERENCES customer (id)
-)
+);
 
 # ===============================================================
 
