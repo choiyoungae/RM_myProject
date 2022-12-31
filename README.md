@@ -29,3 +29,5 @@
 ## Docker Hub에 Push한 링크
 https://hub.docker.com/r/choiyoungae/rm_youngae_project
 
+## 과제 진행 과정에서 겪은 상황은 아래의 노션 링크에도 적어놓았습니다
+https://field-cave-f2e.notion.site/RM-project-2f537cee14a241aaad08cecd88ad018a
