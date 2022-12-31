@@ -19,11 +19,11 @@
 'http://localhost:8080/product'를 입력하면 상품정보 데이터를 조회할 수 있다.<br/>
 ![image](https://user-images.githubusercontent.com/109134495/210076460-df6399ac-8dc2-44e5-ad60-62088da57c17.png)<br/>
 (저는 JSON Viewer 확장 프로그램을 쓰고 있습니다. 편히 보시려면 해당 확장 프로그램을 크롬에서 다운 후 적용하시면 됩니다.)<br/>
-'http://localhost:8080/company'를 입력하면 상품정보 데이터를 조회할 수 있다.<br/>
+'http://localhost:8080/company'를 입력하면 등록업체 데이터를 조회할 수 있다.<br/>
 ![image](https://user-images.githubusercontent.com/109134495/210076584-99f3d99e-66f6-4cd4-a384-be1da822b2ac.png)<br/>
-'http://localhost:8080/customer'를 입력하면 상품정보 데이터를 조회할 수 있다.<br/>
+'http://localhost:8080/customer'를 입력하면 구매자 데이터를 조회할 수 있다.<br/>
 ![image](https://user-images.githubusercontent.com/109134495/210076646-424e33b5-e7b9-4860-82e3-fb86581c93af.png)<br/>
-'http://localhost:8080/purchaseInfo'를 입력하면 상품정보 데이터를 조회할 수 있다.<br/>
+'http://localhost:8080/purchaseInfo'를 입력하면 구매정보 데이터를 조회할 수 있다.<br/>
 ![image](https://user-images.githubusercontent.com/109134495/210076712-0a00f500-1e65-4b6e-9524-c56159887947.png)
 
 ## Docker Hub에 Push한 링크
